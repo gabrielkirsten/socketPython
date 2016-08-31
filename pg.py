@@ -1,12 +1,6 @@
 #! /usr/bin/env python
 #coding: utf-8
-import sys, os
-import socket
-import curses
-import datetime
-import time
-import psycopg2
-import json
+import sys, os, socket, curses, datetime, time, psycopg2, json
 
 HOST = ''              # Endereco IP do Servidor
 PORT = 5000            # Porta que o Servidor esta
@@ -90,7 +84,6 @@ try:
 				while True:
 					msg = con.recv(1024)
 					if not msg: break
-					#print cliente, msg
 					ts = time.time()
 					st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')				#data atual no formato do POSTGRESQL
 					msgsplit = msg.rstrip('\n').split('#')
@@ -101,32 +94,28 @@ try:
 						myscreen.addstr(17, 1, " ")														#limpa a janela
 						myscreen.clrtoeol()
 						myscreen.addstr(17, 1, str(cliente) + "\t\t" + st + "\t" + msg)
-						myscreen.refresh()
 					except psycopg2.ProgrammingError, msg:
 						myscreen.addstr(17, 1, " ")														#limpa a janela
 						myscreen.clrtoeol()
 						myscreen.addstr(17, 1, "ERROR psql", curses.A_BOLD|curses.color_pair(4))
-						myscreen.refresh()
 					except psycopg2.IntegrityError, msg:
 						myscreen.addstr(17, 1, " ")														#limpa a janela
 						myscreen.clrtoeol()
 						myscreen.addstr(17, 1, "ERROR Integrity", curses.A_BOLD|curses.color_pair(4))
-						myscreen.refresh()
 					except psycopg2.InternalError, msg:
 						myscreen.addstr(17, 1, " ")														#limpa a janela
 						myscreen.clrtoeol()
 						myscreen.addstr(17, 1, "ERROR Internal", curses.A_BOLD|curses.color_pair(4))
-						myscreen.refresh()
 					except IndexError:
 						myscreen.addstr(17, 1, " ")														#limpa a janela
 						myscreen.clrtoeol()
 						myscreen.addstr(17, 1, "ERROR msg", curses.A_BOLD|curses.color_pair(4))
-						myscreen.refresh()
+					myscreen.refresh()
 				myscreen.addstr(8, 1, " ")																#limpa a janela
 				myscreen.clrtoeol()
 				myscreen.addstr(8, 1, str(cliente) + "\t\tDESCONECTADO")
 				myscreen.refresh()
-				con.close() 
+				con.close() 																			#encerra a conexão com o socket
 			except socket.error, msg:
 				pass
 	
@@ -135,5 +124,3 @@ except KeyboardInterrupt:																				#encerra execução se for pression
 	conn.close()
 	print "finalizando..."
 	sys.exit(1)
-
-
