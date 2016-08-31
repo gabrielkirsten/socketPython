@@ -1,0 +1,6 @@
+{
+	"dbname":"yourDBname",
+	"user":"yourDBuserName",
+	"host":"yourDBhost",
+	"password":"yourDBpass"
+}
