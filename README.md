@@ -26,12 +26,15 @@ Software desenvolvido para o projeto de graduação no curso de Engenharia de Co
 ------------------------------------------------------------------------	
 ##Utilização
         - Instale (se não estiver instalado) a biblioteca "psycopg2" com o comando: "sudo apt-get install python-psycopg2";
+        - Configure o arquivo configBD.json com as suas configurações do banco de dados;
+        - Execute o arquivo py.py
         
 ------------------------------------------------------------------------		
 ##Estrutura de diretórios
 	.
 	|-- socketPython
 	|	|-- pg.py (codigo em python)
+	|	|-- configBD(example).json (template do arquivo de configuração com o BD)
 	
 ------------------------------------------------------------------------
 ##Comandos
