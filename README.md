@@ -13,14 +13,15 @@ O software recebe os dados de um dispositivo para monitoramento veicular que é 
 ![alt tag](https://cloud.githubusercontent.com/assets/15522193/18116163/67d47fc0-6f13-11e6-9593-f91dd9bb03bc.png)
 
 Software desenvolvido para o projeto de graduação no curso de Engenharia de Computação.
-    	**Etapas de desenvolvimento:
-    		- Estudo da biblioteca socket
-    		- Implementação do socket
-    		- Tratamento de erros do socket
-    		- Implementação da interface utilizando curses
-    		- Tratamento de erros do curses
-    		- Implementação da conexão com o banco de dados
-            - Tratamento de erros do banco de dados
+
+	**Etapas de desenvolvimento:
+		- Estudo da biblioteca socket
+		- Implementação do socket
+		- Tratamento de erros do socket
+		- Implementação da interface utilizando curses
+		- Tratamento de erros do curses
+		- Implementação da conexão com o banco de dados
+		- Tratamento de erros do banco de dados
         
 ------------------------------------------------------------------------	
 ##Utilização
