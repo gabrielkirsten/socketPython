@@ -1,4 +1,17 @@
-# socketPython
+**Aguardando finailzação da matéria para submissão do código!**
+```
+ ____  _____    _    ____  __  __ _____ 
+|  _ \| ____|  / \  |  _ \|  \/  | ____|
+| |_) |  _|   / _ \ | | | | |\/| |  _|  
+|  _ <| |___ / ___ \| |_| | |  | | |___ 
+|_| \_\_____/_/   \_\____/|_|  |_|_____|
+				     _                                              _        _   
+				 ___(_)___ _ __ ___   _____   __     ___  ___   ___| | _____| |_ 
+				/ __| / __| '_ ` _ \ / _ \ \ / /____/ __|/ _ \ / __| |/ / _ \ __|
+				\__ \ \__ \ | | | | | (_) \ V /_____\__ \ (_) | (__|   <  __/ |_ 
+				|___/_|___/_| |_| |_|\___/ \_/      |___/\___/ \___|_|\_\___|\__|
+
+```
 This project opens a socket to receive data from a remote hardware and connection to a database to save the data. PROJECT Sismov. 
 
     Ps. Description in PT-BR
@@ -6,16 +19,16 @@ This project opens a socket to receive data from a remote hardware and connectio
 ## Descrição
 Desenvolvido em Python v2.7.12 utilizando como base a biblioteca psycopg2, curses e socket.
 
+##### Imagem do software: 
+![alt tag](https://cloud.githubusercontent.com/assets/15522193/18116163/67d47fc0-6f13-11e6-9593-f91dd9bb03bc.png)
+
 Sistema Operacional: Ubuntu 16.04 LTS 
 
 O software recebe os dados de um dispositivo para monitoramento veicular que é integrado a interface de diagnostico do veiculo. Os dados são recebidos e separados por um caractere '#' utilizando a função _split()_, e então os dados são salvos em um banco de dados PostgreSQL.  
 
-###### Imagem do software 
-![alt tag](https://cloud.githubusercontent.com/assets/15522193/18116163/67d47fc0-6f13-11e6-9593-f91dd9bb03bc.png)
-
 Software desenvolvido para o projeto de graduação no curso de Engenharia de Computação.
 
-	**Etapas de desenvolvimento:
+### Etapas de desenvolvimento:
 		- Estudo da biblioteca socket
 		- Implementação do socket
 		- Tratamento de erros do socket
