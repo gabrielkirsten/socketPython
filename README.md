@@ -17,7 +17,7 @@ This project opens a socket to receive data from a remote hardware and connectio
     Ps. Description in PT-BR
 ------------------------------------------------------------------------
 ## Descrição
-Desenvolvido em Python v2.7.12 utilizando como base a biblioteca psycopg2, curses e socket.
+Desenvolvido em Python v2.7.12 utilizando como base a biblioteca psycopg2, curses e socket. 
 
 ##### Imagem do software: 
 ![alt tag](https://cloud.githubusercontent.com/assets/15522193/18116163/67d47fc0-6f13-11e6-9593-f91dd9bb03bc.png)
@@ -59,3 +59,8 @@ Software desenvolvido para o projeto de graduação no curso de Engenharia de Co
 (a medida que forem atualizados os comandos, eles podem ser vistos na ultima linha do programa)
 
 -------------------------------------------------------------------------
+### Detalhes
+Este projeto faz parte do projeto SISMOV, que consiste em um sistema de monitoramento veicular, onde foi desenvolvida a parte de hardware e software.
+![pcb_sim](https://cloud.githubusercontent.com/assets/15522193/23223502/fec2436a-f909-11e6-9f18-c49714e767bc.png)
+![placa-montada-antena](https://cloud.githubusercontent.com/assets/15522193/23223503/fec3d446-f909-11e6-8b81-4ca39b395a36.jpg)
+![ps_dtop](https://cloud.githubusercontent.com/assets/15522193/23223670/6b04de0c-f90a-11e6-8f2b-88aae639bd3d.png)
